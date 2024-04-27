@@ -27,38 +27,48 @@ body {
 }
 
 .App {
-  display: flex;
+ /* display: flex;
   flex-direction: row;
   width: 100%; /* Uses the full width but respects max-width */
-  max-width: 1200px; /* Sets a max-width for very wide screens */
-  padding: var(--content-padding);
+  /*max-width: 1200px; /* Sets a max-width for very wide screens */
+  /*padding: var(--content-padding);
   box-sizing: border-box;
   position: relative; /* Ensures that fixed positioning is relative to App if needed */
-  margin-bottom: 5vw;
-  border: 2px solid red;
+ /* margin-bottom: 5vw;
+  border: 2px solid red; */
+}
+
+.panel{
+  border: 5px dashed green;
+  display: flex;
+  justify-content: center;
+  max-width: 1200px; /* Adjust max-width as needed */
+  margin: 40px auto; /* Professional margin and auto centering */
+  padding: 20px; /* Padding around the panel */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional shadow for better visibility */
+  position: relative;
 }
 
 .leftPanel {
-  width: 50%;
+  /* width: 50%;
   height: 100vh;
   padding: var(--content-padding);
+  padding-right: 6rem;
   box-sizing: border-box;
   overflow-y: hidden; /*Ensures no vertical scrolling*/
-  position: fixed; /*Keeps the panel fixed during scroll */
-  left: 0; /* Aligns the panel to the left */
-  border: 1px solid white;
+ /* position: fixed; /*Keeps the panel fixed during scroll */
+  /*border: 1px solid white;
+  left:0; */
+  flex: 1;
+  position: fixed;
+  height: 100vw;
+  border-right: 1px solid red;
+  overflow: hidden;
 }
 
 .rightPanel {
-  width: 50%;
-  padding: var(--content-padding);
-  box-sizing: border-box;
-  margin-left: 50%; /*Ensures it starts from the middle of the App */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border: 1px solid white;
+  flex:2;
+  overflow-y: auto;
 }
 
 /*NAV BAR*/
