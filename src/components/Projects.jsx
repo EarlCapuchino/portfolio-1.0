@@ -21,8 +21,8 @@ const Projects = () => {
         );
 
         return project.link ? (
-           <div className="project-card-linked">
-            <a href={project.link} className="project-card-linked" target="_blank" rel="noopener noreferrer" key={index} style={{ textDecoration: 'none', color: 'inherit' }}>
+           <div className="ll">
+            <a href={project.link}  target="_blank" rel="noopener noreferrer" key={index} style={{ textDecoration: 'none', color: 'inherit' }}>
             {projectContent}
           </a>
           </div>

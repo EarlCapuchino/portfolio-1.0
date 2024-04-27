@@ -4,6 +4,7 @@ import data from '../data/credentials.json';
 const Experience = () => {
   return (
     <div className="experience" id="experience">
+      <h4>Experience</h4>
       {data.experience.map((exp, index) => {
         // Check if the experience has a link and render accordingly
         const experienceContent = (

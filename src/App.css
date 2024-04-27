@@ -35,7 +35,6 @@ body {
   box-sizing: border-box;
   position: relative; /* Ensures that fixed positioning is relative to App if needed */
   margin-bottom: 5vw;
-  border: 2px solid red;
 }
 
 .leftPanel {
@@ -46,7 +45,6 @@ body {
   overflow-y: hidden; /*Ensures no vertical scrolling*/
   position: fixed; /*Keeps the panel fixed during scroll */
   left: 0; /* Aligns the panel to the left */
-  border: 1px solid white;
 }
 
 .rightPanel {
@@ -58,7 +56,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border: 1px solid white;
 }
 
 /*NAV BAR*/
@@ -253,12 +250,15 @@ body {
 .project-card {
   align-items: center; /* Aligns items vertically */
   justify-content: flex-start; /* Aligns items to the start of the flex line */
-  width: 100%; /* Takes full width to allow children to expand */
   margin-bottom: 1rem;
-  padding: 10px;
-  border: 1px solid var(--subtext-color);
   transition: background-color 0.3s ease-in-out;
+  padding: 0.5rem;
 }
+
+.ll:hover{
+  background-color: rgba(255, 255, 255, 0.1); /* Translucent glass color */
+}
+
 .project-name {
   font-size: 1.2rem;
   color: var(--text-color);
@@ -269,11 +269,9 @@ body {
 
 }
 
-.project-card-linked:hover {
-  background-color: rgba(255, 255, 255, 0.1); /* Translucent glass color */
-}
 
-.project-card-linked:hover .project-name {
+
+.ll:hover .project-name {
   color: var(--link-hover-color); /* Change company color on hover */
 }
 
@@ -318,7 +316,6 @@ body {
   display: flex;
   flex-direction: column;
   padding: 1.25rem;
-  border: 1px solid white;
 }
 
 .education h4 {
